@@ -1,0 +1,353 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 body,\
+p \{\
+    font-size: 25px;\
+\}\
+\
+body,\
+h1,\
+h2,\
+h3,\
+h4,\
+h5,\
+h6,\
+p \{\
+    font-family: Helvetica, sans-serif;\
+\}\
+\
+.heading-title \{\
+    margin-bottom: 70px;\
+    text-transform: capitalize;\
+    text-align: center;\
+\}\
+\
+.red \{\
+    color: red;\
+\}\
+\
+.mb30 \{\
+    margin-bottom: 30px;\
+\}\
+\
+.mb50 \{\
+    margin-bottom: 50px;\
+\}\
+\
+.mb100 \{\
+    margin-bottom: 100px;\
+\}\
+\
+.btn-transparent \{\
+    background: transparent;\
+    color: #000;\
+    border: 2px solid #000;\
+    border-radius: 0;\
+    font-size: 30px;\
+    width: 100%;\
+    padding: 30px;\
+\}\
+\
+/*--------start header section----------*/\
+.header \{\
+    padding-top: 10px;\
+    position: fixed;\
+    top: 0;\
+    background: #fff;\
+    width: 100%;\
+    z-index: 10000;\
+\}\
+\
+.btn-top \{\
+    background: #F32316;\
+    color: #fff;\
+    border-radius: 0;\
+    border: none;\
+    padding: 20px 40px;\
+    font-size: 20px;\
+    margin-top: 5px;\
+\}\
+\
+.header .logo \{\
+    margin-left: -5px;\
+\}\
+\
+.header ul li \{\
+    list-style: none;\
+    display: inline-block;\
+    padding: 2px;\
+\}\
+\
+.header ul li a \{\
+    display: block;\
+    font-size: 20px;\
+    color: #000;\
+    padding: 25px 10px;\
+    text-decoration: none;\
+\}\
+\
+/*--------start banner section----------*/\
+.banner-background \{\
+    background: url(../img/banner.jpg);\
+    padding: 280px 5% 120px 5%;\
+    background-size: cover;\
+    background-repeat: no-repeat;\
+    background-position: top;\
+    text-align: center;\
+\}\
+\
+.banner h1 \{\
+    font-size: 40px;\
+    line-height: 1.5;\
+\}\
+\
+.banner h2 \{\
+    font-size: 33px;\
+    padding-top: 45px;\
+\}\
+\
+/*---------start video section------------*/\
+.video \{\
+    padding: 50px 0;\
+\}\
+\
+/*--------start completed home section--*/\
+.completed-homes .background \{\
+    background: #E6E1E1;\
+    padding: 30px 0 0;\
+\}\
+\
+.homes \{\
+    font-size: 30px;\
+    text-align: center;\
+    padding: 30px 0 90px 0;\
+\}\
+\
+.completed-homes .brand \{\
+    padding: 50px 20px 10px;\
+\}\
+\
+.completed-homes .brand img \{\
+    width: 90%;\
+    margin: auto;\
+\}\
+\
+img.nopad-mob \{\
+    width: 75% !important;\
+\}\
+\
+/*--------start case studies section----*/\
+.case-studies \{\
+    padding: 80px 20px 60px;\
+\}\
+\
+/*--------start benefits section--------*/\
+.benefits-background \{\
+    background: #424242;\
+    color: #fff;\
+    padding: 70px 30px;\
+\}\
+\
+.benefits ul \{\
+    border: 1px solid gray;\
+    padding: 30px;\
+    min-height: 350px;\
+\}\
+\
+.benefits ul li \{\
+    padding: 10px 0;\
+\}\
+\
+/*--------start packages section--------*/\
+.packages \{\
+    padding: 80px 20px 60px;\
+\}\
+\
+.packages .mb30 \{\
+    margin-bottom: 10px;\
+\}\
+\
+.packages p \{\
+    margin-bottom: 0;\
+\}\
+\
+.package1 \{\
+    margin-bottom: 100px;\
+\}\
+\
+/*--------start team section------------*/\
+.team \{\
+    padding: 60px 0;\
+\}\
+\
+.team img \{\
+    width: 100%;\
+\}\
+\
+.team h2 \{\
+    font-weight: 700;\
+    line-height: 2;\
+\}\
+\
+/*--------start price section-----------*/\
+.price-background \{\
+    background: #03A9F5;\
+    padding: 120px 0;\
+\}\
+\
+.btn-price \{\
+    background: #F32316;\
+    color: #fff;\
+    border-radius: 0;\
+    border: none;\
+    padding: 25px 60px;\
+    font-size: 30px;\
+\}\
+\
+/*--------start faq section-------------*/\
+.faq \{\
+    padding: 60px 20px;\
+\}\
+\
+.panel-heading \{\
+    background: #fff !important;\
+    padding: 20px;\
+\}\
+\
+.panel-title \{\
+    font-size: 20px;\
+\}\
+\
+.panel-body \{\
+    font-size: 16px;\
+\}\
+\
+/*--------start footer section----------*/\
+.footer \{\
+    padding: 30px 0;\
+\}\
+\
+.footer p \{\
+    font-size: 20px;\
+\}\
+\
+/*--------start media query-------------*/\
+@media (min-width: 1200px) \{\
+    .container \{\
+        width: 90%;\
+    \}\
+\}\
+\
+@media (max-width: 767px) \{\
+    .mobile-hide \{\
+        display: none;\
+    \}\
+\
+    .header \{\
+        position: relative;\
+    \}\
+\
+    body,\
+    p \{\
+        font-size: 18px;\
+    \}\
+\
+    .heading-title \{\
+        margin-bottom: 40px;\
+    \}\
+\
+    .header .logo \{\
+        margin: auto;\
+    \}\
+\
+    .header ul \{\
+        padding-left: 0;\
+    \}\
+\
+    .header ul li a \{\
+        font-size: 12px;\
+        padding: 15px 2px;\
+    \}\
+\
+    .banner h1 \{\
+        font-size: 25px;\
+    \}\
+\
+    .banner h2,\
+    .team h2 \{\
+        font-size: 20px;\
+        line-height: 1.5;\
+    \}\
+\
+    .banner-background \{\
+        padding: 90px 5%;\
+    \}\
+\
+    .completed-homes .brand-background \{\
+        padding: 30px 0 0;\
+    \}\
+\
+    .homes \{\
+        font-size: 22px;\
+        padding: 20px 0 0 0;\
+        margin: 5px 0;\
+    \}\
+\
+    .completed-homes .brand img \{\
+        padding: 20px 0;\
+        max-width: 150px;\
+        margin: auto;\
+    \}\
+\
+    .nopad-mob \{\
+        padding: 0 !important;\
+    \}\
+\
+    .mb50 \{\
+        margin-bottom: 30px;\
+    \}\
+\
+    .case-studies,\
+    .benefits,\
+    .packages,\
+    .team,\
+    .faq \{\
+        padding: 30px 0;\
+    \}\
+\
+    .btn-transparent,\
+    .btn-price \{\
+        font-size: 22px;\
+    \}\
+\
+    .benefits ul \{\
+        min-height: 250px;\
+    \}\
+\
+    .package1,\
+    .mb100 \{\
+        margin-bottom: 50px;\
+    \}\
+\
+    .team img \{\
+        margin: auto;\
+        max-width: 300px;\
+    \}\
+\
+    .team .col-sm-4,\
+    .benefits .col-sm-4 \{\
+        margin-bottom: 30px;\
+    \}\
+\
+    .footer p \{\
+        font-size: 16px;\
+    \}\
+\}\
+}

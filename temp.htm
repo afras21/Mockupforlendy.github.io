@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="demo">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Bootstrap,Font-Awesome">
+    <meta name="author" content="demo">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sales Booking</title>
+
+    <!--css link-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="icon" href="#">
+</head>
+<style>
+body,
+p {
+    font-size: 25px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: Helvetica, sans-serif;
+}
+
+.heading-title {
+    margin-bottom: 70px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.red {
+    color: red;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.mb50 {
+    margin-bottom: 50px;
+}
+
+.mb100 {
+    margin-bottom: 100px;
+}
+
+.btn-transparent {
+    background: transparent;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 0;
+    font-size: 30px;
+    width: 100%;
+    padding: 30px;
+}
+
+/*--------start header section----------*/
+.header {
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    width: 100%;
+    z-index: 10000;
+}
+
+.btn-top {
+    background: #F32316;
+    color: #fff;
+    border-radius: 0;
+    border: none;
+    padding: 20px 40px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.header .logo {
+    margin-left: -5px;
+}
+
+.header ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 2px;
+}
+
+.header ul li a {
+    display: block;
+    font-size: 20px;
+    color: #000;
+    padding: 25px 10px;
+    text-decoration: none;
+}
+
+/*--------start banner section----------*/
+.banner-background {
+    background: url(../img/banner.jpg);
+    padding: 280px 5% 120px 5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 40px;
+    line-height: 1.5;
+}
+
+.banner h2 {
+    font-size: 33px;
+    padding-top: 45px;
+}
+
+/*---------start video section------------*/
+.video {
+    padding: 50px 0;
+}
+
+/*--------start completed home section--*/
+.completed-homes .background {
+    background: #E6E1E1;
+    padding: 30px 0 0;
+}
+
+.homes {
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0 90px 0;
+}
+
+.completed-homes .brand {
+    padding: 50px 20px 10px;
+}
+
+.completed-homes .brand img {
+    width: 90%;
+    margin: auto;
+}
+
+img.nopad-mob {
+    width: 75% !important;
+}
+
+/*--------start case studies section----*/
+.case-studies {
+    padding: 80px 20px 60px;
+}
+
+/*--------start benefits section--------*/
+.benefits-background {
+    background: #424242;
+    color: #fff;
+    padding: 70px 30px;
+}
+
+.benefits ul {
+    border: 1px solid gray;
+    padding: 30px;
+    min-height: 350px;
+}
+
+.benefits ul li {
+    padding: 10px 0;
+}
+
+/*--------start packages section--------*/
+.packages {
+    padding: 80px 20px 60px;
+}
+
+.packages .mb30 {
+    margin-bottom: 10px;
+}
+
+.packages p {
+    margin-bottom: 0;
+}
+
+.package1 {
+    margin-bottom: 100px;
+}
+
+/*--------start team section------------*/
+.team {
+    padding: 60px 0;
+}
+
+.team img {
+    width: 100%;
+}
+
+.team h2 {
+    font-weight: 700;
+    line-height: 2;
+}
+
+/*--------start price section-----------*/
+.price-background {
+    background: #03A9F5;
+    padding: 120px 0;
+}
+
+.btn-price {
+    background: #F32316;
+    color: #fff;
+    border-radius: 0;
+    border: none;
+    padding: 25px 60px;
+    font-size: 30px;
+}
+
+/*--------start faq section-------------*/
+.faq {
+    padding: 60px 20px;
+}
+
+.panel-heading {
+    background: #fff !important;
+    padding: 20px;
+}
+
+.panel-title {
+    font-size: 20px;
+}
+
+.panel-body {
+    font-size: 16px;
+}
+
+/*--------start footer section----------*/
+.footer {
+    padding: 30px 0;
+}
+
+.footer p {
+    font-size: 20px;
+}
+
+/*--------start media query-------------*/
+@media (min-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    .mobile-hide {
+        display: none;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    body,
+    p {
+        font-size: 18px;
+    }
+
+    .heading-title {
+        margin-bottom: 40px;
+    }
+
+    .header .logo {
+        margin: auto;
+    }
+
+    .header ul {
+        padding-left: 0;
+    }
+
+    .header ul li a {
+        font-size: 12px;
+        padding: 15px 2px;
+    }
+
+    .banner h1 {
+        font-size: 25px;
+    }
+
+    .banner h2,
+    .team h2 {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .banner-background {
+        padding: 90px 5%;
+    }
+
+    .completed-homes .brand-background {
+        padding: 30px 0 0;
+    }
+
+    .homes {
+        font-size: 22px;
+        padding: 20px 0 0 0;
+        margin: 5px 0;
+    }
+
+    .completed-homes .brand img {
+        padding: 20px 0;
+        max-width: 150px;
+        margin: auto;
+    }
+
+    .nopad-mob {
+        padding: 0 !important;
+    }
+
+    .mb50 {
+        margin-bottom: 30px;
+    }
+
+    .case-studies,
+    .benefits,
+    .packages,
+    .team,
+    .faq {
+        padding: 30px 0;
+    }
+
+    .btn-transparent,
+    .btn-price {
+        font-size: 22px;
+    }
+
+    .benefits ul {
+        min-height: 250px;
+    }
+
+    .package1,
+    .mb100 {
+        margin-bottom: 50px;
+    }
+
+    .team img {
+        margin: auto;
+        max-width: 300px;
+    }
+
+    .team .col-sm-4,
+    .benefits .col-sm-4 {
+        margin-bottom: 30px;
+    }
+
+    .footer p {
+        font-size: 16px;
+    }
+}
+</style>
+
+<body>
+    <!---------------------------start header section--------------------------->
+    <section class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="#"><img src="img/logo.JPG" alt="" class="img-responsive logo"></a>
+                </div>
+
+                <div class="col-sm-6 text-center">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#case-studies">CASE STUDIES</a></li>
+                        <li><a href="#packages">PACKAGES</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3 text-right mobile-hide">
+                    <a href="#" class="btn btn-top">GET A PRICE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------------end header section----------------------------->
+
+
+    <!---------------------------start banner section--------------------------->
+    <section class="banner">
+        <div class="container">
+            <div class="banner-background">
+                <h1>Furnish you Home with a Kitchen, Wardrobes and TV Unit in just 30 Days &amp; 3 Lakhs</h1>
+                <h1>Without the Hassle of Carpenters, Designers and Brands</h1>
+                <h2>Select your Interiors in just 60 mins from 3 Packages</h2>
+            </div>
+        </div>
+    </section>
+    <!---------------------------end banner section----------------------------->
+
+
+    <!---------------------------start video section---------------------------->
+    <section class="video text-center">
+        <div class="container">
+            <h1 class="heading-title">Wacth the video</h1>
+            <video width="90%" controls>
+                <source src="video/test.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    <!---------------------------end video section------------------------------>
+
+
+    <!---------------------------start completed homes section------------------>
+    <section class="completed-homes text-center">
+        <div class="container">
+            <div class="background">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="homes">
+                            100 completed homes
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="homes">
+                            50 partners
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="homes">
+                            12800 sft implemented
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brand">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img src="img/brand1.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="img/brand2.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="img/brand3.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="img/brand4.png" alt="" class="img-responsive nopad-mob">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="img/brand5.png" alt="" class="img-responsive nopad-mob">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="img/brand6.png" alt="" class="img-responsive nopad-mob">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="img/brand7.png" alt="" class="img-responsive nopad-mob">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="img/brand8.png" alt="" class="img-responsive nopad-mob">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------------end completed homes section-------------------->
+
+
+    <!---------------------------start case studies section--------------------->
+    <section class="case-studies" id="case-studies">
+        <div class="container">
+            <h1 class="heading-title mb100">Case Studies</h1>
+            <div class="row mb100">
+                <div class="col-sm-8">
+                    <div>
+                        <p class="mb30">Vishal and Sunita’s home -</p>
+                        <p><span class="red">Requirement -</span></p>
+                        <p class="mb30">Customer required their 3bhk to be furnished for rental. Both of them worked full time jobs and lacked the time to find suitable partners.</p>
+
+                        <p><span class="red">Solution -</span></p>
+                        <p class="mb30">We had a series of discussions with them and suggested the Express package. We identified Express partners and fixed up meetings/showroom visits.</p>
+
+                        <p><span class="red">Result -</span></p>
+                        <p class="mb30">Our partners implemented the home within 30 days of signoff.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="mb30">
+                        <img src="img/image-1.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-transparent">Get a quote!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb100">
+                <div class="col-sm-8">
+                    <div>
+                        <p class="mb30">Sukendu and Monita’s home -</p>
+                        <p><span class="red">Requirement -</span></p>
+                        <p class="mb30">Customer required their 3bhk to be furnished for moving in. They had shopped around for partners but were confused as they were getting home interiors done for the first time.</p>
+
+                        <p><span class="red">Solution -</span></p>
+                        <p class="mb30">We helped them understand the possibilities for their home in context to their requirements and budget. Our Design partner engaged with them and shared a few sample designs which helped them understand. Our partners took them on a tour of their state of the art factory and explained the quality process to them.</p>
+
+                        <p><span class="red">Result -</span></p>
+                        <p class="mb30">Our partners implemented the home within 45 days of signoff.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="mb30">
+                        <img src="img/image-2.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-transparent">Get a quote!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-8">
+                    <div>
+                        <p class="mb30">Mr. Alfred’s home -</p>
+                        <p><span class="red">Requirement -</span></p>
+                        <p class="mb30">Customer required some civil work to be done and the kitchen to be redone. Customer wasnt willing to relocate and this was a challenge.</p>
+
+                        <p><span class="red">Solution -</span></p>
+                        <p class="mb30">The execution of any refurbished home is always a challenge as Customers tend to live there and tere are time restrictions of working in such communities. We identified partners who specialize in refurbished work and understod Mr. Alfred’s requirements.</p>
+
+                        <p><span class="red">Result -</span></p>
+                        <p class="mb30">Our partners implemented the home within 30 days of signoff.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="mb30">
+                        <img src="img/image-3.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-transparent">Get a quote!</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!---------------------------end case studies section----------------------->
+
+
+    <!---------------------------start benefits section------------------------->
+    <section class="benefits">
+        <div class="container">
+            <h1 class="heading-title">Benefits</h1>
+            <div class="benefits-background">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p class="text-center mb50">Ease of use</p>
+                        <ul>
+                            <li>Select from 3 packages</li>
+                            <li>Get instant quotes</li>
+                            <li>Factory/ showroom visit arranged</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <p class="text-center mb50">Curated partners</p>
+                        <ul>
+                            <li>Minimum 10+ years of experience</li>
+                            <li>Fully automated factories</li>
+                            <li>Skilled carpentry teams</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <p class="text-center mb50">10 years warranty</p>
+                        <ul>
+                            <li>5 year warranty on plywood and 10 years on hardware</li>
+                            <li>Free anual maintenance</li>
+                            <li>All products used are certified</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------------end benefits section--------------------------->
+
+
+    <!-------------------------start packages section--------------------------->
+    <section class="packages" id="packages">
+        <div class="container">
+            <h1 class="text-center heading-title">Packages</h1>
+            <div class="package1">
+                <div class="mb30"><span class="red">Express Package - </span>fit outs</div>
+                <div class="mb30">
+                    <p><span class="red">Pricing - </span></p>
+                    <p>3 bhk - 3.t to 3.5 lakhs</p>
+                    <p>2 bhk - 2.5 to 3 lakhs</p>
+                </div>
+
+                <div class="mb30">
+                    <p><span class="red">Products - </span></p>
+                    <p>1. Shoerack</p>
+                    <p>2. TV3. unit</p>
+                    <p>3. Kitchen</p>
+                    <p>4. Utility unit</p>
+                    <p>5. MBR Wardrobe</p>
+                    <p>6. KBR Wardrobe</p>
+                    <p>7. GBR Wardrobe</p>
+                </div>
+                <div class="mb30">
+                    <p><span class="red">Time - </span></p>
+                    <p>30 days for design + implementation</p>
+                </div>
+                <div class="mb30">
+                    <p><span class="red">Warranty - </span></p>
+                    <p>5 years for Plywood and 10 years for hardware</p>
+                </div>
+            </div>
+
+            <div class="package2">
+                <div class="mb30"><span class="red">Premium Package - </span>fit outs</div>
+                <div class="mb30">
+                    <p><span class="red">Pricing - </span></p>
+                    <p>3 bhk - 5 to 5.75 lakhs</p>
+                    <p>2 bhk - 4.35 to 5 lakhs</p>
+                </div>
+
+                <div class="mb30">
+                    <p><span class="red">Products - </span></p>
+                    <p>1. Shoerack</p>
+                    <p>2. False ceilings + Lighting</p>
+                    <p>3. TV unit with backpanel</p>
+                    <p>4. Kitchen</p>
+                    <p>5. Utility unit</p>
+                    <p>6. MBR Wardrobe (sliding)</p>
+                    <p>7. KBR Wardrobe</p>
+                    <p>8. GBR Wardrobe</p>
+                    <p>9. Stone cladding</p>
+                    <p>10. Bathroom storage</p>
+                </div>
+                <div class="mb30">
+                    <p><span class="red">Time - </span></p>
+                    <p>45 days for design + implementation</p>
+                </div>
+                <div class="mb30">
+                    <p><span class="red">Warranty - </span></p>
+                    <p>5 years for Plywood and 10 years for hardware</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------------end packages section--------------------------->
+
+
+    <!---------------------------start team section----------------------------->
+    <section class="team text-center">
+        <div class="container">
+            <h1 class="heading-title">The Team</h1>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team1">
+                        <img src="img/team1.jpg" alt="" class="img-responsive">
+                        <h2>TEAM MEMBER</h2>
+                        <p>{Insert credible achievements}</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="team1">
+                        <img src="img/team1.jpg" alt="" class="img-responsive">
+                        <h2>TEAM MEMBER</h2>
+                        <p>{Insert credible achievements}</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="team1">
+                        <img src="img/team1.jpg" alt="" class="img-responsive">
+                        <h2>TEAM MEMBER</h2>
+                        <p>{Insert credible achievements}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------------end team section------------------------------->
+
+
+    <!---------------------------start price section---------------------------->
+    <section class="price text-center">
+        <div class="container">
+            <div class="price-background">
+                <button class="btn btn-price">GET A PRICE</button>
+            </div>
+        </div>
+    </section>
+    <!---------------------------end price section------------------------------>
+
+
+    <!---------------------------start faq section------------------------------>
+    <section class="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><i class="fa fa-question-circle" aria-hidden="true"></i> <a data-toggle="collapse" href="#panel1">Lorem ipsum dolor sit amet?</a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="panel1">
+                            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><i class="fa fa-question-circle" aria-hidden="true"></i> <a data-toggle="collapse" href="#panel2">Lorem ipsum dolor sit amet?</a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="panel2">
+                            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><i class="fa fa-question-circle" aria-hidden="true"></i> <a data-toggle="collapse" href="#panel3">Lorem ipsum dolor sit amet?</a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="panel3">
+                            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><i class="fa fa-question-circle" aria-hidden="true"></i> <a data-toggle="collapse" href="#panel4">Lorem ipsum dolor sit amet?</a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="panel4">
+                            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><i class="fa fa-question-circle" aria-hidden="true"></i> <a data-toggle="collapse" href="#panel5">Lorem ipsum dolor sit amet?</a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="panel5">
+                            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><i class="fa fa-question-circle" aria-hidden="true"></i> <a data-toggle="collapse" href="#panel6">Lorem ipsum dolor sit amet?</a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="panel6">
+                            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------------end faq section-------------------------------->
+
+
+    <!---------------------------start footer section--------------------------->
+    <section class="footer text-center">
+        <div class="container">
+            <p>Company Name</p>
+            <p>112 Example st.</p>
+            <p>+123 456 7890</p>
+            <p>This website is not a part of Facebook website or Facebook Inc. Addisionally, this site is not endorsed by Facebook in any way. Facebook is a trademark of Facebook Inc.</p>
+            <p><a href="#">Privacy Policy</a> Contact Us: support@yourcompany.com</p>
+        </div>
+    </section>
+
+    <!--javascript integration-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
