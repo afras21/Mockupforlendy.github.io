@@ -1,0 +1,553 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="demo">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Bootstrap,Font-Awesome">
+    <meta name="author" content="demo">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sales Booking</title>
+
+    <!--css link-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="icon" href="#">
+</head>
+<style>
+body,
+p {
+    font-size: 25px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: Helvetica, sans-serif;
+}
+
+.heading-title {
+    margin-bottom: 70px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.red {
+    color: red;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.mb50 {
+    margin-bottom: 50px;
+}
+
+.mb100 {
+    margin-bottom: 100px;
+}
+
+.btn-transparent {
+    background: transparent;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 0;
+    font-size: 30px;
+    width: 100%;
+    padding: 30px;
+}
+
+/*--------start header section----------*/
+.header {
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    width: 100%;
+    z-index: 10000;
+}
+
+.btn-top {
+    background: #F32316;
+    color: #fff;
+    border-radius: 0;
+    border: none;
+    padding: 20px 40px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.header .logo {
+    margin-left: -5px;
+}
+
+.header ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 2px;
+}
+
+.header ul li a {
+    display: block;
+    font-size: 20px;
+    color: #000;
+    padding: 25px 10px;
+    text-decoration: none;
+}
+
+/*--------start banner section----------*/
+.banner-background {
+    background: url(../img/banner.jpg);
+    padding: 280px 5% 120px 5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 40px;
+    line-height: 1.5;
+}
+
+.banner h2 {
+    font-size: 33px;
+    padding-top: 45px;
+}
+
+/*---------start video section------------*/
+.video {
+    padding: 50px 0;
+}
+
+/*--------start completed home section--*/
+.completed-homes .background {
+    background: #E6E1E1;
+    padding: 30px 0 0;
+}
+
+.homes {
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0 90px 0;
+}
+
+.completed-homes .brand {
+    padding: 50px 20px 10px;
+}
+
+.completed-homes .brand img {
+    width: 90%;
+    margin: auto;
+}
+
+img.nopad-mob {
+    width: 75% !important;
+}
+
+/*--------start case studies section----*/
+.case-studies {
+    padding: 80px 20px 60px;
+}
+
+/*--------start benefits section--------*/
+.benefits-background {
+    background: #424242;
+    color: #fff;
+    padding: 70px 30px;
+}
+
+.benefits ul {
+    border: 1px solid gray;
+    padding: 30px;
+    min-height: 350px;
+}
+
+.benefits ul li {
+    padding: 10px 0;
+}
+
+/*--------start packages section--------*/
+.packages {
+    padding: 80px 20px 60px;
+}
+
+.packages .mb30 {
+    margin-bottom: 10px;
+}
+
+.packages p {
+    margin-bottom: 0;
+}
+
+.package1 {
+    margin-bottom: 100px;
+}
+
+/*--------start team section------------*/
+.team {
+    padding: 60px 0;
+}
+
+.team img {
+    width: 100%;
+}
+
+.team h2 {
+    font-weight: 700;
+    line-height: 2;
+}
+
+/*--------start price section-----------*/
+.price-background {
+    background: #03A9F5;
+    padding: 120px 0;
+}
+
+.btn-price {
+    background: #F32316;
+    color: #fff;
+    border-radius: 0;
+    border: none;
+    padding: 25px 60px;
+    font-size: 30px;
+}
+
+/*--------start faq section-------------*/
+.faq {
+    padding: 60px 20px;
+}
+
+.panel-heading {
+    background: #fff !important;
+    padding: 20px;
+}
+
+.panel-title {
+    font-size: 20px;
+}
+
+.panel-body {
+    font-size: 16px;
+}
+
+/*--------start footer section----------*/
+.footer {
+    padding: 30px 0;
+}
+
+.footer p {
+    font-size: 20px;
+}
+
+/*--------start media query-------------*/
+@media (min-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    .mobile-hide {
+        display: none;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    body,
+    p {
+        font-size: 18px;
+    }
+
+    .heading-title {
+        margin-bottom: 40px;
+    }
+
+    .header .logo {
+        margin: auto;
+    }
+
+    .header ul {
+        padding-left: 0;
+    }
+
+    .header ul li a {
+        font-size: 12px;
+        padding: 15px 2px;
+    }
+
+    .banner h1 {
+        font-size: 25px;
+    }
+
+    .banner h2,
+    .team h2 {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .banner-background {
+        padding: 90px 5%;
+    }
+
+    .completed-homes .brand-background {
+        padding: 30px 0 0;
+    }
+
+    .homes {
+        font-size: 22px;
+        padding: 20px 0 0 0;
+        margin: 5px 0;
+    }
+
+    .completed-homes .brand img {
+        padding: 20px 0;
+        max-width: 150px;
+        margin: auto;
+    }
+
+    .nopad-mob {
+        padding: 0 !important;
+    }
+
+    .mb50 {
+        margin-bottom: 30px;
+    }
+
+    .case-studies,
+    .benefits,
+    .packages,
+    .team,
+    .faq {
+        padding: 30px 0;
+    }
+
+    .btn-transparent,
+    .btn-price {
+        font-size: 22px;
+    }
+
+    .benefits ul {
+        min-height: 250px;
+    }
+
+    .package1,
+    .mb100 {
+        margin-bottom: 50px;
+    }
+
+    .team img {
+        margin: auto;
+        max-width: 300px;
+    }
+
+    .team .col-sm-4,
+    .benefits .col-sm-4 {
+        margin-bottom: 30px;
+    }
+
+    .footer p {
+        font-size: 16px;
+    }
+}
+</style>
+
+<body>
+    <!---------------------------start header section--------------------------->
+    <section class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="#"><img src="img/logo.JPG" alt="" class="img-responsive logo"></a>
+                </div>
+
+                <div class="col-sm-6 text-center">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#case-studies">CASE STUDIES</a></li>
+                        <li><a href="#packages">PACKAGES</a></li>
+                        <li><a href="#packages">PRICING</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3 text-right mobile-hide">
+                    <a href="#" class="btn btn-top">GET A PRICE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------------end header section----------------------------->
+
+    
+        <!-------------------------start Pricing section--------------------------->
+        <section class="packages" id="packages">
+            <div class="container">
+                <h1 style = "background-color: #c9c9c9; padding: 2%; margin-top: 2%;"class="text-center heading-title">Pricing</h1>
+    
+            </div>
+        </section>
+        <!---------------------------end Pricing section--------------------------->
+
+        <!-------------------------start Express Package section--------------------------->
+        <section class="packages" id="packages">
+            <div class="container">
+                <h1 style = "background-color: #c9c9c9; padding: 2%; margin-top: 2%;"class="text-center heading-title">Express Package</h1>
+                <div class="package1">
+                    <div class="mb30"><span class="red">Description - </span>If you are looking to rent out your home with minimum furniture, our Rental package
+    
+                        will serve your purpose. A no frills, value for money solution that consists of a basic kitchen, basic wardrobes
+                        
+                        and a basic shoerack</div>
+    
+                    <div class="mb30">
+                        <p><span class="red">Products - </span></p>
+                        <p>1. Shoerack</p>
+                        <p>2. Kitchen</p>
+                        <p>3. MBR Wardrobe</p>
+                        <p>4. KBR Wardrobe</p>
+                        <p>5. GBR Wardrobe</p>
+                    </div>
+                    <div class="mb30">
+                        <p><span class="red">Design - </span></p>
+                        <p>Ergonomic and Contemporary</p>
+                    </div>
+                    <div class="mb30">
+                        <p><span class="red">Materials - </span></p>
+                        <p>1. Plywood - ISI Grade Commercial Calibrated Plwood - enduraply.in</p>
+                        <p>2. Laminates - 1MM Decorative Laminates - airolam.com </p>
+                        <p>3. Hardware - ebco.in</p>
+                        <p>4. Edge banding - rehau.com </p>
+                        <p>5. Glue - Fevicol</p>
+                        <p>6. Packaging - carton box packaging</p> 
+                   </div>
+                   <div class="mb30">
+                    <p><span class="red">Manufacturing -</span></p>
+                    <p>Manufacturing at a fully automated factory at Bangalore</p>
+                </div>
+                <div class="mb30">
+                    <p><span class="red">Furniture installation - -</span></p>
+                    <p>Modular installation by experienced team.</p>
+                </div>
+                <div class="mb30">
+                    <p><span class="red">Time -</span></p>
+                    <p>30 days for design + implementation</p>
+                </div>
+                    <div class="mb30">
+                        <p><span class="red">Warranty - </span></p>
+                        <p>5 years for Plywood and 10 years for hardware</p>
+                    </div>
+                    <div class="mb30">
+                        <p><span class="red">Payment - </span></p>
+                        <p>Escrow account</p>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+        <!---------------------------end Express Package section--------------------------->
+
+        <!-------------------------start rental packages section--------------------------->
+        <section class="packages" id="packages">
+            <div class="container">
+                <h1 style = "background-color: #c9c9c9; padding: 2%; margin-top: 2%;"class="text-center heading-title">Rental Packages</h1>
+                <div class="package1">
+                    <div class="mb30"><span class="red">Description - </span>If you are looking to rent out your home with minimum furniture, our Rental package
+    
+                        will serve your purpose. A no frills, value for money solution that consists of a basic kitchen, basic wardrobes
+                        
+                        and a basic shoerack</div>
+    
+                    <div class="mb30">
+                        <p><span class="red">Products - </span></p>
+                        <p>1. Shoerack</p>
+                        <p>2. Kitchen</p>
+                        <p>3. MBR Wardrobe</p>
+                        <p>4. KBR Wardrobe</p>
+                        <p>5. GBR Wardrobe</p>
+                    </div>
+                    <div class="mb30">
+                        <p><span class="red">Design - </span></p>
+                        <p>Ergonomic and Contemporary</p>
+                    </div>
+                    <div class="mb30">
+                        <p><span class="red">Materials - </span></p>
+                        <p>1. Plywood - ISI Grade Commercial Calibrated Plwood - enduraply.in</p>
+                        <p>2. Laminates - 1MM Decorative Laminates - airolam.com </p>
+                        <p>3. Hardware - ebco.in</p>
+                        <p>4. Edge banding - rehau.com </p>
+                        <p>5. Glue - Fevicol</p>
+                        <p>6. Packaging - carton box packaging</p> 
+                   </div>
+                   <div class="mb30">
+                    <p><span class="red">Manufacturing -</span></p>
+                    <p>Manufacturing at a fully automated factory at Bangalore</p>
+                </div>
+                <div class="mb30">
+                    <p><span class="red">Furniture installation - -</span></p>
+                    <p>Modular installation by experienced team.</p>
+                </div>
+                <div class="mb30">
+                    <p><span class="red">Time -</span></p>
+                    <p>30 days for design + implementation</p>
+                </div>
+                    <div class="mb30">
+                        <p><span class="red">Warranty - </span></p>
+                        <p>5 years for Plywood and 10 years for hardware</p>
+                    </div>
+                    <div class="mb30">
+                        <p><span class="red">Payment - </span></p>
+                        <p>Escrow account</p>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+        <!---------------------------end rental packages section--------------------------->
+
+
+    <!---------------------------start price section---------------------------->
+    <section class="price text-center">
+        <div class="container">
+            <div class="price-background">
+                <button class="btn btn-price">GET A PRICE</button>
+            </div>
+        </div>
+    </section>
+    <!---------------------------end price section------------------------------>
+
+
+    <!---------------------------start footer section--------------------------->
+    <!-- <section class="footer text-center">
+        <div class="container">
+            <p>Company Name</p>
+            <p>112 Example st.</p>
+            <p>+123 456 7890</p>
+            <p>This website is not a part of Facebook website or Facebook Inc. Addisionally, this site is not endorsed by Facebook in any way. Facebook is a trademark of Facebook Inc.</p>
+            <p><a href="#">Privacy Policy</a> Contact Us: support@yourcompany.com</p>
+        </div>
+    </section> -->
+
+    <!--javascript integration-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
