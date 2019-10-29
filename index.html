@@ -107,7 +107,7 @@ p {
 /*--------start banner section----------*/
 .banner-background {
     background: url(../img/banner.jpg);
-    padding: 280px 5% 120px 5%;
+    /* padding: 280px 5% 120px 5%; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -365,8 +365,9 @@ img.nopad-mob {
 
 <body>
     <!---------------------------start header section--------------------------->
-    <section class="header">
-        <div class="container">
+    <section class="header" style="
+    background: #b8dbff;
+">        <div class="container">
             <div class="row">
                 <div class="col-sm-3">
                     <a href="#"><img src="img/logo.JPG" alt="" class="img-responsive logo"></a>
@@ -377,14 +378,14 @@ img.nopad-mob {
                         <li><a href="#">HOME</a></li>
                         <li><a href="#case-studies">CASE STUDIES</a></li>
                         <li><a href="#packages">PACKAGES</a></li>
-                        <li><a href="pricing.html">PRICING</a></li>
+                        <!-- <li><a href="pricing.html">PRICING</a></li> -->
                         <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </div>
 
-                <div class="col-sm-3 text-right mobile-hide">
+                <!-- <div class="col-sm-3 text-right mobile-hide">
                     <a href="#" class="btn btn-top">GET A PRICE</a>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -392,20 +393,20 @@ img.nopad-mob {
 
 
     <!---------------------------start banner section--------------------------->
-    <section class="banner">
+    <section class="banner" style="    
+    background: url(img/backimage.png);;
+    padding: 280px 5% 120px 5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    ">
         <div class="container">
             <div class="banner-background">
-                <h1>Furnish you Home with a Kitchen, Wardrobes and TV Unit in just 30 Days &amp; 3 Lakhs</h1>
+                <h1>Furnish you Home in just 30 Days &amp; 4 Lakhs</h1>
                 <h1>Without the Hassle of Carpenters, Designers and Brands</h1>
-                <h2>Select your Interiors in just 60 mins from 3 Packages</h2>
+                <h2>Select your Interiors in just 60 mins from 3 Packs</h2>
             </div>
         </div>
-    </section>
-    <!---------------------------end banner section----------------------------->
-
-
-    <!---------------------------start video section---------------------------->
-    <section class="video text-center">
         <div class="container">
             <h1 class="heading-title">Wacth the video</h1>
             <video width="90%" controls>
@@ -414,6 +415,19 @@ img.nopad-mob {
             </video>
         </div>
     </section>
+    <!---------------------------end banner section----------------------------->
+
+
+    <!---------------------------start video section---------------------------->
+    <!-- <section class="video text-center">
+        <div class="container">
+            <h1 class="heading-title">Wacth the video</h1>
+            <video width="90%" controls>
+                <source src="video/test.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section> -->
     <!---------------------------end video section------------------------------>
 
 
@@ -664,7 +678,7 @@ img.nopad-mob {
 
 
     <!---------------------------start team section----------------------------->
-    <section class="team text-center">
+    <!-- <section class="team text-center">
         <div class="container">
             <h1 class="heading-title">The Team</h1>
             <div class="row">
@@ -693,23 +707,23 @@ img.nopad-mob {
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!---------------------------end team section------------------------------->
 
 
     <!---------------------------start price section---------------------------->
-    <section class="price text-center">
+    <!-- <section class="price text-center">
         <div class="container">
             <div class="price-background">
                 <button class="btn btn-price">GET A PRICE</button>
             </div>
         </div>
-    </section>
+    </section> -->
     <!---------------------------end price section------------------------------>
 
 
     <!---------------------------start faq section------------------------------>
-    <section class="faq">
+    <!-- <section class="faq">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
@@ -779,7 +793,7 @@ img.nopad-mob {
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!---------------------------end faq section-------------------------------->
 
 
@@ -789,7 +803,7 @@ img.nopad-mob {
             <p>Company Name</p>
             <p>112 Example st.</p>
             <p>+123 456 7890</p>
-            <p>This website is not a part of Facebook website or Facebook Inc. Addisionally, this site is not endorsed by Facebook in any way. Facebook is a trademark of Facebook Inc.</p>
+            <!-- <p>This website is not a part of Facebook website or Facebook Inc. Addisionally, this site is not endorsed by Facebook in any way. Facebook is a trademark of Facebook Inc.</p> -->
             <p><a href="#">Privacy Policy</a> Contact Us: support@yourcompany.com</p>
         </div>
     </section>

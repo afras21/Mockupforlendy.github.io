@@ -86,8 +86,9 @@ p {
 
 /*--------start banner section----------*/
 .banner-background {
-    background: url(../img/banner.jpg);
-    padding: 280px 5% 120px 5%;
+    background: url(../img/backimage.png);
+    
+    /* padding: 280px 5% 120px 5%; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -107,6 +108,7 @@ p {
 /*---------start video section------------*/
 .video {
     padding: 50px 0;
+    margin-left: 5%;
 }
 
 /*--------start completed home section--*/
